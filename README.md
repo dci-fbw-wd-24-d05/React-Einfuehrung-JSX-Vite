@@ -7,3 +7,5 @@
 2. `JSX` und `Images` in React
 
 3. `Styles in React` mit External Datei.
+
+- Hallo Olga
