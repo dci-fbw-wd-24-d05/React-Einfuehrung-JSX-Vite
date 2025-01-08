@@ -1,42 +1,15 @@
-import "./App.css";
+import seaDiving from "./assets/sea-diving.avif";
 
 function App() {
-  const person = {
-    name: "John",
-    age: 30,
-  };
-
-  const users = [
-    {
-      name: "Anna",
-      age: 20,
-    },
-    {
-      name: "Sophie",
-      age: 40,
-    },
-  ];
-  // Return darf nur ein element zurueck geben, entweder fragments oder ein element unser wahl
   return (
-    <>
-      {/* Fragments <></> */}
-      <h1>Try JSX</h1>
-      <p>name: {person.name}</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
-        nobis, ea quam officia alias consectetur sed adipisci quaerat quisquam
-        voluptates eius minus nostrum ullam optio, quos eos tempora non enim?
-      </p>
-
-      {users.map((user) => {
-        return (
-          <div key={user.age}>
-            <h2>{user.name}</h2>
-            <p>age: {user.age}</p>
-          </div>
-        );
-      })}
-    </>
+    <div>
+      <h1>Image trying</h1>
+      <img
+        src="https://images.unsplash.com/photo-1682687981630-cefe9cd73072?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="sea diving"
+      />
+      <img src={seaDiving} alt="" />
+    </div>
   );
 }
 
